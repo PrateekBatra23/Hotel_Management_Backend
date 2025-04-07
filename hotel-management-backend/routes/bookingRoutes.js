@@ -1,12 +1,23 @@
 const express = require("express");
-const { bookRoom, getMyBookings, cancelBooking } = require("../controllers/bookingController");
-const {protect} = require("../middleware/authMiddleware");
+const {
+  bookRoom,
+  getMyBookings,
+  cancelBooking,
+  getBookingById,
+  getAllBookings,
+} = require("../controllers/bookingController");
+
+const { protect, adminOnly } = require("../middleware/authMiddleware");
 
 const router = express.Router();
-console.log("Express version:", express.Router); // Should be a function
 
+// 🔐 Customer Routes
 router.post("/", protect, bookRoom);
 router.get("/me", protect, getMyBookings);
-router.patch("/:id/cancel", protect, cancelBooking); // 👈 new route
+router.get("/:id", protect, getBookingById);
+router.patch("/:id/cancel", protect, cancelBooking);
+
+// 👑 Admin Route
+router.get("/", protect, adminOnly, getAllBookings);
 
 module.exports = router;

@@ -24,6 +24,8 @@ app.use("/api/rooms", roomRoutes);
 const bookingRoutes = require("./routes/bookingRoutes");
 app.use("/api/bookings", bookingRoutes);
 
+const serviceRoutes = require("./routes/serviceRoutes");
+app.use("/api/services", serviceRoutes);
 
 
 // Test root route

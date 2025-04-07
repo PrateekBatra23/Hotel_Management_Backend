@@ -25,5 +25,12 @@ const bookingSchema = new mongoose.Schema({
     default: "booked",
   },
 }, { timestamps: true });
+bookingSchema.virtual("serviceRequests", {
+  ref: "ServiceRequest",
+  localField: "_id",
+  foreignField: "booking",
+});
+bookingSchema.set("toObject", { virtuals: true });
+bookingSchema.set("toJSON", { virtuals: true });
 
 module.exports = mongoose.model("Booking", bookingSchema);

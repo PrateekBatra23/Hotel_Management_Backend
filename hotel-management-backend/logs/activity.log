@@ -1,0 +1,12 @@
+[2025-04-07 20:39:49] INFO: Service request created by User 67f24ab373ff2daa9be6a6f7 for Booking 67f3cdb0baee0504f83b7c41 - Type: laundry
+[2025-04-07 20:41:24] INFO: Service request created by User 67f24ab373ff2daa9be6a6f7 for Booking 67f3cdb0baee0504f83b7c41 - Type: room_cleaning
+[2025-04-07 20:43:56] ERROR: 🔥 This is a test error log from controller
+[2025-04-07 20:43:56] INFO: Service request created by User 67f24ab373ff2daa9be6a6f7 for Booking 67f3cdb0baee0504f83b7c41 - Type: room_cleaning
+[2025-04-07 20:47:48] ERROR: 🔥 Manual error log test from /test-error route
+[2025-04-07 20:55:07] INFO: Service request created by User 67f248d873ff2daa9be6a6f3 for Booking 67f3cdb0baee0504f83b7c41 - Type: room_cleaning
+[2025-04-07 20:56:44] ERROR: Error in createServiceRequest: 🔥 Test error for logging 🔥
+[2025-04-07 20:56:52] ERROR: Error in createServiceRequest: 🔥 Test error for logging 🔥
+[2025-04-07 20:57:01] ERROR: Error in createServiceRequest: 🔥 Test error for logging 🔥
+[2025-04-07 21:09:47] INFO: Service request ID 67f3ee52e3b39bc494a0f61a status changed from 'pending' to 'pending'
+[2025-04-07 21:10:12] INFO: Service request ID 67f3ee52e3b39bc494a0f61a status changed from 'pending' to 'pending'
+[2025-04-07 21:11:05] INFO: Service request ID 67f3ee52e3b39bc494a0f61a status changed from 'pending' to 'in_progress'

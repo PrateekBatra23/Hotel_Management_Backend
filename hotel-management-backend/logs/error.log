@@ -1,0 +1,5 @@
+[2025-04-07 20:43:56] ERROR: 🔥 This is a test error log from controller
+[2025-04-07 20:47:48] ERROR: 🔥 Manual error log test from /test-error route
+[2025-04-07 20:56:44] ERROR: Error in createServiceRequest: 🔥 Test error for logging 🔥
+[2025-04-07 20:56:52] ERROR: Error in createServiceRequest: 🔥 Test error for logging 🔥
+[2025-04-07 20:57:01] ERROR: Error in createServiceRequest: 🔥 Test error for logging 🔥
